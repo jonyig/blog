@@ -1,4 +1,77 @@
 baseURL = "https://jonyig.github.io/hugo-blog/"
-languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "ananke"
+# [en, zh-cn, fr, ...] determines default content language
+defaultContentLanguage = "en"
+# language code
+languageCode = "en"
+title = "Jonny's Blog"
+
+# Change the default theme to be use when building the site with Hugo
+theme = "LoveIt"
+hasCJKLanguage = true
+summaryLength = 25
+
+googleAnalytics = "UA-162889782-1"
+
+[params]
+  # LoveIt theme version
+  version = "0.2.X"
+[params.footer]
+    since = 2020
+    license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+  [params.home]
+    # 主页信息设置
+    [params.home.profile]
+      enable = true
+      avatarURL = "avatar.png"
+      subtitle = "Coding、Cat、Mountain、Beach"
+      typeit = true
+      social = true
+  [params.social]
+    Email = "ji394su311203106@gmail.com"
+    GitHub = "jonyig"
+  [params.comment]
+    enable = true
+    # Gitalk 评论系统设置 (https://github.com/gitalk/gitalk)
+    [params.comment.gitalk]
+      enable = true
+      owner = "jonyig"
+      repo = "discuss"
+      clientId = "a9c3197fa58a94523c49"
+      clientSecret = "a4d2bcd382cfcd3aa26da509611632e0afcd1d82"
+      createIssueManually = false
+# 作者信息
+[author]
+  name = "Jonny"
+  link = ""
+[menu]
+  [[menu.main]]
+    identifier = "文章盒"
+    # you can add extra information before the name (HTML format is allowed), such as icons
+    pre = ""
+    name = "文章盒"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = "文章盒"
+    weight = 1
+  [[menu.main]]
+    identifier = "分類盒"
+    pre = ""
+    name = "分類盒"
+    url = "/categories/"
+    title = "分類盒"
+    weight = 2
+  [[menu.main]]
+    identifier = "標籤盒"
+    pre = ""
+    # name = "標籤盒"
+    url = "/tags/"
+    title = "標籤盒"
+    weight = 3
+
+[[deployment.targets]]
+    # An arbitrary name for this target.
+    name = "deployment"
+
+# S3; see https://gocloud.dev/howto/blob/#s3
+# For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
+    URL = "s3://blog.jonny.website?region=ap-northeast-1"
