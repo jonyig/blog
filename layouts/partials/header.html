@@ -1,5 +1,6 @@
 {{- /* Desktop header */ -}}
 <header class="desktop" id="header-desktop">
+    {{ template "_internal/google_analytics_async.html" . }}
     <div class="header-wrapper">
         <div class="header-title">
             <a href="{{ .Site.Home.RelPermalink }}" title="{{ .Site.Title }}">
@@ -86,11 +87,10 @@
 
 {{- /* Mobile header */ -}}
 <header class="mobile" id="header-mobile">
+    {{ template "_internal/google_analytics_async.html" . }}
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                {{ template "_internal/google_analytics_async.html" . }}
-
                 <a href="{{ .Site.Home.RelPermalink }}" title="{{ .Site.Title }}">
                     {{- with .Site.Params.header.title -}}
                         {{- with .logo -}}
