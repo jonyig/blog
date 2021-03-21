@@ -10,7 +10,7 @@ theme = "LoveIt"
 hasCJKLanguage = true
 summaryLength = 25
 
-googleAnalytics = "UA-162889782-1"
+googleAnalytics = "G-FSNY6EVVMF"
 
 [params]
   # LoveIt theme version
