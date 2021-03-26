@@ -29,6 +29,10 @@ googleAnalytics = "UA-192741535-1"
   [params.social]
     Email = "ji394su311203106@gmail.com"
     GitHub = "jonyig"
+  [params.analytics]
+    enable = true
+    [params.analytics.google]
+        id = "UA-192741535-1"
   [params.comment]
     enable = true
     # Gitalk 评论系统设置 (https://github.com/gitalk/gitalk)
