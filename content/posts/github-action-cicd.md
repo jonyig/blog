@@ -31,25 +31,37 @@ comment: true
 ```console
 #請將此段貼上至Main.yml
 
- name: Build and Deploy
- on:
-   push:
-     branches:
-       - master
- jobs:
-   build-and-deploy:
-     runs-on: ubuntu-latest
-     steps:
-       - name: Checkout
-         uses: actions/checkout@master
- 
-       - name: Build and Deploy
-         uses: JamesIves/github-pages-deploy-action@master
-         env:
-           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-           BRANCH: gh-pages
-           FOLDER: build
-           BUILD_SCRIPT: yarn && yarn build
+ name: Upload Website
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          submodules: true
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.74.1'
+          extended: true
+
+      - name: build
+        run: hugo -D --gc --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.ACCESS_TOKEN }}
+          force_orphan: true
+          BRANCH: gh-pages
+
+
 
 ```
 
