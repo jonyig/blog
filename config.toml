@@ -41,7 +41,7 @@ googleAnalytics = "UA-192741535-1"
       owner = "jonyig"
       repo = "discuss"
       clientId = "a9c3197fa58a94523c49"
-      clientSecret = "a4d2bcd382cfcd3aa26da509611632e0afcd1d82"
+      clientSecret = "5689c1d5d55c20b80a4e17be6fe43211eb3acd3b"
       createIssueManually = false
 # 作者信息
 [author]
