@@ -1,5 +1,5 @@
 ---
-title: "Distributed Locks"
+title: "Distributed Locks - redis"
 date: 2022-04-05T17:50:42+08:00
 categories: ["redis"]
 tags: ["redis","lock"]
