@@ -21,7 +21,7 @@ comment: true
 
 ## 流程圖
 
-```mermaid
+{{< mermaid >}}
 flowchart TD
 	subgraph main [main]
 		A(API) --> B(redis)
@@ -37,8 +37,8 @@ flowchart TD
 	end
 		H -->|when lock, open watch dog| I(watch dog) 
 		E -->|when unlock, close watch dog| I
- 
-```
+{{< /mermaid >}}
+
 
 
 ## 相關連結
