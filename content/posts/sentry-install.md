@@ -1,6 +1,7 @@
 ---
 title: "Sentry Install"
 date: 2022-03-30T22:34:34+08:00
+categories: ["tools"]
 draft: true
 comment: true
 ---
