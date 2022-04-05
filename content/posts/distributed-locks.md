@@ -7,13 +7,6 @@ draft: true
 comment: true
 ---
 
-## 相關連結
-
-- [https://www.modb.pro/db/77169](https://www.modb.pro/db/77169)
-- [https://juejin.cn/post/7024307688196538375](https://juejin.cn/post/7024307688196538375)
-- [https://segmentfault.com/a/1190000038988087](https://segmentfault.com/a/1190000038988087)
-- [https://github.com/jonyig/go-leetcode/blob/master/playground/distributed-locks/service/redisRepository.go](https://github.com/jonyig/go-leetcode/blob/master/playground/distributed-locks/service/redisRepository.go)
-
 ## 描述
 
 1. API 剛進來先嘗試取得 lock
@@ -46,3 +39,11 @@ flowchart TD
 		E -->|when unlock, close watch dog| I
  
 ```
+
+
+## 相關連結
+
+- [https://www.modb.pro/db/77169](https://www.modb.pro/db/77169)
+- [https://juejin.cn/post/7024307688196538375](https://juejin.cn/post/7024307688196538375)
+- [https://segmentfault.com/a/1190000038988087](https://segmentfault.com/a/1190000038988087)
+- [https://github.com/jonyig/go-leetcode/blob/master/playground/distributed-locks/service/redisRepository.go](https://github.com/jonyig/go-leetcode/blob/master/playground/distributed-locks/service/redisRepository.go)
