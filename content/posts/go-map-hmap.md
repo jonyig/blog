@@ -1,5 +1,5 @@
 ---
-title: "Go 的 map 旅程 - hmapmake"
+title: "Go 的 map 旅程 - hmap"
 date: 2022-04-23T17:50:42+08:00
 categories: ["golang"]
 tags: ["core","go"]
