@@ -15,7 +15,7 @@ comment: true
 
 基本上我們在使用 Go 的 map 的大致用法會是
 
-```bash
+```
 m := map[int8]int{
 		1:1,
 		2:2,
@@ -33,7 +33,7 @@ fmt.Println(v2, ok)
 
 會先介紹 `hmap`
 
-```bash
+```
 // A header for a Go map.
 type hmap struct {
 	// Note: the format of the hmap is also encoded in cmd/compile/internal/reflectdata/reflect.go.

@@ -15,7 +15,7 @@ comment: true
 
 基本上我們在使用 Go 的 map 的大致用法會是
 
-```bash
+```
 m := map[int8]int{
 		1:1,
 		2:2,
@@ -33,7 +33,7 @@ fmt.Println(v2, ok)
 
 這次會介紹 `bmap`
 
-```bash
+```
 // A bucket for a Go map.
 type bmap struct {
 	// tophash generally contains the top byte of the hash value
@@ -56,7 +56,7 @@ type bmap struct {
 
 實際會長這樣
 
-```bash
+```
 type bmap struct {
 		topbits  [8]uint8
 		keys     [8]keytype
@@ -65,7 +65,7 @@ type bmap struct {
 		pad      uintptr
 }
 
-## https://github.com/golang/go/blob/7677616a263e8ded606cc8297cb67ddc667a876e/src/cmd/compile/internal/gc/reflect.go#L83
+## https://github.com/golang/go/blob/go1.16.5/src/cmd/compile/internal/gc/reflect.go#L83
 ```
 
 1. `topbits` : 儲存 hash key 的 前八位
@@ -78,7 +78,7 @@ map 的格式長這樣
 
 圖片參考自: [https://www.kevinwu0904.top/blogs/golang-map/](https://www.kevinwu0904.top/blogs/golang-map/)
 
-{{< figure src="https://kevinwu0904-blog-images.oss-cn-shanghai.aliyuncs.com/blogs-golang-map/20210719113331.png" title="13" >}}
+{{< figure src="https://kevinwu0904-blog-images.oss-cn-shanghai.aliyuncs.com/blogs-golang-map/20210719113331.png" title="" >}}
 
 
 ## 相關連結

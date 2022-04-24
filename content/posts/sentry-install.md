@@ -11,13 +11,13 @@ comment: true
 
 1. 需要先把專案 clone 下來
 
-    ```bash
+    ```
     $ git clone git@github.com:getsentry/self-hosted.git
     ```
 
 2. 執行前置步驟
 
-    ```bash
+    ```
     $ cd self-hosted
     $ ./install.sh
     
@@ -31,7 +31,7 @@ comment: true
 
 3. 再來就等畫面出現這個就可以了
 
-    ```bash
+    ```
     -----------------------------------------------------------------
     
     You're all done! Run the following command to get Sentry running:
@@ -43,7 +43,7 @@ comment: true
 
 4. 再來就可以執行 `docker compose` 了
 
-    ```bash
+    ```
     docker compose up -d
     ```
 
@@ -52,13 +52,13 @@ comment: true
 
 - 如果遇到要清空 volume
 
-    ```bash
+    ```
     docker-compose down -v --remove-orphans && docker volume prune -f
     ```
 
 - 筆者在跑 `Ensuring Relay credentials` 時遇到卡住情形
 
-    ```bash
+    ```
     ▶ Ensuring Relay credentials ...
     ../relay/config.yml already exists, skipped creation.
     relay Pulling 
@@ -67,14 +67,14 @@ comment: true
     Network sentry-self-hosted_default  Created
     ```
 
-    ```bash
+    ```
     ## 不確定是不是 docker 版本問題，改成 docker-compose 就好了
     $ docker-compose --ansi never --env-file /Users/jonny/Desktop/jonny-job/self-hosted/.env run --rm --no-deps -T relay credentials generate --stdout
     ```
 
 - 可以使用指令
 
-    ```bash
+    ```
     docker-compose stop   ###t停止
     
     docker-compose build   ###重新build

@@ -15,7 +15,7 @@ comment: true
 
 ## 安裝
 
-```bash
+```
 go install github.com/go-delve/delve/cmd/dlv@latest
 ```
 
@@ -23,7 +23,7 @@ go install github.com/go-delve/delve/cmd/dlv@latest
 
 可以創建一個範例
 
-```bash
+```
 ## main
 
 package main
@@ -49,7 +49,7 @@ func main() {
 
 接下來就執行
 
-```bash
+```
 dlv debug main.go
 
 ==>
@@ -62,14 +62,14 @@ Type 'help' for list of commands.
 
 需要下中斷點讓他停留
 
-```bash
+```
 b main.main
 Breakpoint 1 set at 0x10cbc7b for main.main() ./main.go:16
 ```
 
 接下來就可以直接跑
 
-```bash
+```
 c
 
 ===>
@@ -111,7 +111,7 @@ c
 
 要進入這一段的底層函數需要進去 runtime 下中斷點的
 
-```bash
+```
 v1 := m[3]
 
 這邊要下 
