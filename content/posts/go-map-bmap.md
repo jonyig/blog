@@ -78,7 +78,6 @@ map 的格式長這樣
 
 圖片參考自: [https://www.kevinwu0904.top/blogs/golang-map/](https://www.kevinwu0904.top/blogs/golang-map/)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d1b31b54-f084-496a-95a3-577c3d075876/Untitled.png)
 
 ## 相關連結
 
