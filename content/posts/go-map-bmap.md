@@ -1,6 +1,6 @@
 ---
 title: "Go 的 map 旅程 - bmap"
-date: 2022-04-24T17:50:42+08:00
+date: 2022-04-24T14:50:42+08:00
 categories: ["golang"]
 tags: ["core","go"]
 draft: true
@@ -78,6 +78,7 @@ map 的格式長這樣
 
 圖片參考自: [https://www.kevinwu0904.top/blogs/golang-map/](https://www.kevinwu0904.top/blogs/golang-map/)
 
+![Untitled](https://kevinwu0904-blog-images.oss-cn-shanghai.aliyuncs.com/blogs-golang-map/20210719113331.png)
 
 ## 相關連結
 
