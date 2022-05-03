@@ -9,6 +9,11 @@ description: ""
 
 ---
 
+## Description
+
+I had a problem about the deadlock which occurred when we want to add N+1 on index key  
+
+## Preparation
 ```
 select * from performance_schema.data_locks
 select * from performance_schema.innodb_locks
@@ -36,6 +41,7 @@ INSERT INTO `t` (`id`, `c`, `d`) VALUES
 (27, 0, 0);
 ```
 
+## Operating
 | step  | connection 1 | connection 2 |
 | --- | --- | --- |
 | 1 | begin; | begin; |
@@ -45,6 +51,7 @@ INSERT INTO `t` (`id`, `c`, `d`) VALUES
 | 5 |  | ## update t set c = 26 where id = 27;  |
 
 this case that i retried when it found deadlock
+
 
 ## why does it found deadlock
 
